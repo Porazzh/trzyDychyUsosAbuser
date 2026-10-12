@@ -13,7 +13,7 @@
     "zdecydowanie się zgadzam",
   ];
 
-  const delay = 400;
+  const delay = 0;
 
   const norm = (s) =>
     (s || "")
