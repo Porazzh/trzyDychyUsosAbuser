@@ -13,7 +13,9 @@
     "zdecydowanie się zgadzam",
   ];
 
-  const delay = 0;
+  const delay = 10;
+  
+  const submitBtn = document.querySelector('input[value="Zapisz odpowiedzi"]');
 
   const norm = (s) =>
     (s || "")
@@ -54,6 +56,7 @@
   const step = () => {
     if (i >= answers.length) {
       console.log("Gotowe - zaznaczono wszystkie opcje.");
+      submitBtn.click();
       return;
     }
     const want = norm(answers[i]);
